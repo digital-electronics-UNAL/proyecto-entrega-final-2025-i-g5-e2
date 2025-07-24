@@ -3,19 +3,13 @@
 
 # Integrantes
 
+[David Felipe Cardenas Cubides](https://github.com/dcardenascu)
 
-# Nombre del proyecto
+[Alvaro Nicolas Lopez Brijaldo](https://github.com/Nicolasss16)
 
-
-# Documentación
-## Descripción de la arquitectura
-
-
-## Diagramas de la arquitectura
+[Brayan Yesid Santos Gonzalez](https://github.com/BsantosG)
 
 
-## Simulaciones
 
-
-## Implementación
+https://drive.google.com/drive/folders/1rQF4W5LrGwnc31Y5G6gPLh74Duq-4310
 
