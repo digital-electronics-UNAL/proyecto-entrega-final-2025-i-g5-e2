@@ -31,7 +31,7 @@ en Verilog HDL, control de dispositivos externos y diseño e integración de sis
 A lo largo del desarrollo se enfrentaron retos relacionados con la sincronización de señales, la
 medición de tiempo con alta resolución y el diseño de señales PWM ajustables.
 
-#Arquitectura implementada
+# Arquitectura implementada
 
 La arquitectura del sistema se basó en un diseño completamente modular, y se conecta de manera
 coherente para su correcto funcionamiento, y esto es conseguir la emisión del pulso ultrasónico
@@ -94,7 +94,7 @@ En resumen el uso de inteligencia artificial es de carácter práctico en el ent
 
 
 
-#Conclusiones
+# Conclusiones
 
 El desarrollo de SOMA nos demostró la viabilidad de emplear la lógica digital en FPGA para resolver un problema de accesibilidad real, además de destacar la importancia de la integración de los modelos de acuerdo a sus especificaciones teóricas y técnicas para el correcto acople en un flujo de datos continuo.
 
@@ -109,7 +109,7 @@ Con un punto de vista académico e investigativo, SOMA nos permitió aplicar y r
 
 Finalmente, queremos destacar la importancia del buen manejo del tiempo y de la correcta comunicación en el grupo de trabajo para desarrollar de manera exitosa un proyecto en ingeniería y en general cualquier trabajo conjunto dentro o fuera de la institución.
 
-#Bibliografía
+# Bibliografía
 
 
 
