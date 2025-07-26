@@ -99,7 +99,7 @@ En la siguiente imagen se observan las mediciones tomadas y desplegadas en los s
         <img src="/media/Imagen8.png" alt="alt text" width=500 >
     </p>
 
-#Uso de Inteligencia Artificial
+# Uso de Inteligencia Artificial
  
 
 
