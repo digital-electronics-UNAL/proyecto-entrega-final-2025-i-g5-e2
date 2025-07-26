@@ -156,6 +156,7 @@ Lee, T. (2012). Design with operational amplifiers and analog integrated circuit
 
 Smith, J., & Garcia, L. (2024). High-resolution distance measurement with HC-SR04 and FPGA. Journal of Embedded Systems, 8(2), 45–52.
 
+# video de funcionamiento.
 
 https://drive.google.com/drive/folders/1rQF4W5LrGwnc31Y5G6gPLh74Duq-4310
 
