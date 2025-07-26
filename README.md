@@ -38,31 +38,44 @@ coherente para su correcto funcionamiento, y esto es conseguir la emisión del p
 hasta la señalización de alerta háptica y sonora como se ve en la siguiente imagen.
 
 
-
+<p align="center">
+        <img src="/media/Imagen1.png" alt="alt text" width=500 >
+    </p>
 
  Al principio, un divisor de frecuencia toma el reloj principal de la FPGA y lo reduce para alimentar con la frecuencia adecuada al sensor ultrasónico y  se usa otro divisor de frecuencia para los generadores de los PWM. Esto garantiza que el pulso de disparo enviado al HC-SR04 tenga el ancho y la cadencia correctos además de controlar con precisión la resolución temporal del conteo de eco. con la siguiente arquitectura.
 
+<p align="center">
+        <img src="/media/Imagen2.png" alt="alt text" width=500 >
+    </p>
 
 
 en donde está incluido el divisor de frecuencia del sensor.
 El bloque encargado de la medición envía un breve pulso al sensor, espera el retorno y mide el tiempo en que dicha señal permanece activa. Ese tiempo se traduce internamente a un valor de distancia en centímetros mediante operaciones aritméticas para calibrar el sensor y optimizar el hardware hasta que la lectura sea válida, el valor calculado se pasa a un escalador que configurado de la forma:
 
 
-
+<p align="center">
+        <img src="/media/Imagen3.png" alt="alt text" width=500 >
+    </p>
 
  Que según la proximidad del obstáculo, genera un número proporcional al nivel de alerta deseado en un valor de 0 a 255.
 Después, ese nivel alimenta el PWM para el buzzer piezoeléctrico y otro para el motor de vibración usando la misma configuración teniendo el siguiente bloque para ambos casos.
 
-
+<p align="center">
+        <img src="/media/Imagen4.png" alt="alt text" width=500 >
+    </p>
 
 Conforme algún objeto se acerque, el duty cycle de ambas señales aumenta, produciendo un pitido más sonoro y una vibración más intensa. El buzzer se conecta directamente a la FPGA y el motor va a un controlador de potencia para no tener problemas de potencia dentro de la FPGA y manteniendo la lógica aislada de cargas altas. Mientras tanto, el sistema incluye dos salidas de visualización, un conjunto de displays de siete segmentos para mostrar los centímetros de distancia en dígitos con el circuito:
 
 
-
+<p align="center">
+        <img src="/media/Imagen5.png" alt="alt text" width=500 >
+    </p>
 
  y la pantalla LCD para reflejar los valores del PWM es decir de 0 a 255 usando el circuito:
 
-
+<p align="center">
+        <img src="/media/Imagen6.png" alt="alt text" width=500 >
+    </p>
 
 
 De esta manera hay un flujo que comienza en el divisor del clock para después pasar por la medición y conversión de esta distancia que se traduce en un duty cycle del PWM conectado al puente H para la generación del pitido de alerta con relación a la entrada del sensor conectado directamente a la FPGA.
@@ -76,11 +89,15 @@ dando un total de 748 elementos lógicos, 144 registros y 31 pines usados para e
  Una vez implementado se hacen pruebas del funcionamiento correcto en FPGA donde tiene un alcance considerable para una generación de alerta de una posible futura colisión, y para esta seguros de esto y de no tener en cuenta mediciones inestables o falsos positivos, optamos por tener un comportamiento seguro dentro del rango de 100 centímetros que generan las salidas esperadas del sistema de alerta.
 
 
-
+<p align="center">
+        <img src="/media/Imagen7.png" alt="alt text" width=500 >
+    </p>
 
 En la siguiente imagen se observan las mediciones tomadas y desplegadas en los siete segmentos y la LCD
 
-
+<p align="center">
+        <img src="/media/Imagen8.png" alt="alt text" width=500 >
+    </p>
 
 #Uso de Inteligencia Artificial
  
